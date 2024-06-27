@@ -39,8 +39,8 @@ def predict():
     # Make a prediction
     prediction = model.predict(features)
     #
-    # 0 - Diabetes
-    # 1 - No Diabetes
+    # 0 - No Diabetes
+    # 1 - Diabetes
     probability = model.predict_proba(features)[0][1]  
     prediction_text = label_encoder_diabetes.inverse_transform(prediction)[0]
     print(f"DEBUG prediction: {prediction[0]}")
