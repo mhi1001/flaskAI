@@ -34,8 +34,11 @@
                             <input type="text" id="Age" name="Age" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
                         </div>
                         <div>
-                            <label for="Gender" class="text-sm">Gender (male/female):</label>
-                            <input type="text" id="Gender" name="Gender" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
+                            <label for="Gender" class="text-sm">Gender:</label>
+                            <select id="Gender" name="Gender" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
                         </div>
                         <div>
                             <label for="Height" class="text-sm">Height (inches):</label>
@@ -85,6 +88,9 @@
                     </form>
                     {% if prediction_text %}
                         <h2 class="text-center text-xl text-gray-700 mt-4">{{ prediction_text }}</h2>
+                    {% endif %}
+                    {% if probability_text %}
+                        <h2 class="text-center text-xl text-gray-700 mt-4">{{ probability_text }}</h2>
                     {% endif %}
                 </div>
             </div>
