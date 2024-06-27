@@ -14,39 +14,20 @@
                     <h1 class="text-center text-2xl font-semibold text-gray-700">Diabetes Prediction Form</h1>
                     <form action="/predict" method="post" class="flex flex-col space-y-4">
                         <div>
-                            <label for="Cholesterol" class="text-sm">Cholesterol:</label>
-                            <input type="text" id="Cholesterol" name="Cholesterol" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
                             <label for="Glucose" class="text-sm">Glucose:</label>
                             <input type="text" id="Glucose" name="Glucose" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
-                            <label for="HDL_Chol" class="text-sm">HDL Cholesterol:</label>
-                            <input type="text" id="HDL_Chol" name="HDL_Chol" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
-                            <label for="Chol_HDL_ratio" class="text-sm">Chol/HDL Ratio:</label>
-                            <input type="text" id="Chol_HDL_ratio" name="Chol_HDL_ratio" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
                         </div>
                         <div>
                             <label for="Age" class="text-sm">Age:</label>
                             <input type="text" id="Age" name="Age" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
                         </div>
                         <div>
-                            <label for="Gender" class="text-sm">Gender:</label>
-                            <select id="Gender" name="Gender" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
+                            <label for="waist" class="text-sm">Waist (inches):</label>
+                            <input type="text" id="waist" name="waist" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
                         </div>
                         <div>
-                            <label for="Height" class="text-sm">Height (inches):</label>
-                            <input type="text" id="Height" name="Height" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
-                            <label for="Weight" class="text-sm">Weight (lbs):</label>
-                            <input type="text" id="Weight" name="Weight" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
+                            <label for="Cholesterol" class="text-sm">Cholesterol:</label>
+                            <input type="text" id="Cholesterol" name="Cholesterol" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
                         </div>
                         <div>
                             <label for="BMI" class="text-sm">BMI:</label>
@@ -59,30 +40,6 @@
                         <div>
                             <label for="Diastolic_BP" class="text-sm">Diastolic BP:</label>
                             <input type="text" id="Diastolic_BP" name="Diastolic_BP" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
-                            <label for="waist" class="text-sm">Waist (inches):</label>
-                            <input type="text" id="waist" name="waist" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
-                            <label for="hip" class="text-sm">Hip (inches):</label>
-                            <input type="text" id="hip" name="hip" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
-                            <label for="Waist_hip_ratio" class="text-sm">Waist/Hip Ratio:</label>
-                            <input type="text" id="Waist_hip_ratio" name="Waist_hip_ratio" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
-                            <label for="BMI_Category" class="text-sm">BMI Category (0-Underweight, 1-Normal, 2-Overweight, 3-Obese):</label>
-                            <input type="text" id="BMI_Category" name="BMI_Category" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
-                            <label for="BP_Category" class="text-sm">BP Category (0-Normal, 1-Elevated, 2-Hypertension Stage 1, 3-Hypertension Stage 2):</label>
-                            <input type="text" id="BP_Category" name="BP_Category" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
-                        </div>
-                        <div>
-                            <label for="Waist_to_Height" class="text-sm">Waist to Height Ratio:</label>
-                            <input type="text" id="Waist_to_Height" name="Waist_to_Height" required class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300">
                         </div>
                         <button type="submit" class="mt-4 bg-blue-500 text-white rounded-lg px-4 py-2 font-semibold hover:bg-blue-600">Predict</button>
                     </form>
