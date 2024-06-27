@@ -7,9 +7,7 @@ Exam project
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Research
 https://colab.research.google.com/drive/1CVQKCJN0vUsZ845fnMFBiDOdaKkEAtRJ#scrollTo=qVmhQp7SjGfe
