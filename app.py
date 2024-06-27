@@ -11,9 +11,6 @@ app = Flask(__name__)
 model = joblib.load('diabetes_logistic_model.pkl')
 
 # Load the label encoders
-label_encoder_gender = LabelEncoder()
-label_encoder_gender.classes_ = np.load('label_encoder_gender_classes.npy', allow_pickle=True)
-
 label_encoder_diabetes = LabelEncoder()
 label_encoder_diabetes.classes_ = np.load('label_encoder_diabetes_classes.npy', allow_pickle=True)
 

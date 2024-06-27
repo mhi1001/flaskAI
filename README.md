@@ -52,11 +52,11 @@ https://colab.research.google.com/drive/1CVQKCJN0vUsZ845fnMFBiDOdaKkEAtRJ#scroll
 
 4. **Download the trained model and scaler files:**
 
-    Ensure you have the trained model (`diabetes_logistic_modelMINE.pkl`) and scaler (`scaler.pkl`) files. Place these files in the root directory of the folder.
+    Ensure you have the trained model (`diabetes_logistic_model.pkl`). Place it in the root directory of the folder.
 
 5. **Create and populate the `label_encoder_classes` files:**
 
-    Ensure you have the `label_encoder_gender_classes.npy`, `label_encoder_diabetes_classes.npy`, `label_encoder_bmi_classes.npy`, and `label_encoder_bp_classes.npy` files. Place these files in the root directory of the folder.
+    Ensure you have the `label_encoder_diabetes_classes.npy` file. Place it in the root directory of the folder.
 
 ## Running the Application
 
