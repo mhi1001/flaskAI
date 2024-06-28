@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 import joblib
 import numpy as np
+import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 # Initialize the Flask application
@@ -12,7 +13,7 @@ model = joblib.load('diabetes_logistic_model.pkl')
 
 # Load the label encoders
 label_encoder_diabetes = LabelEncoder()
-label_encoder_diabetes.classes_ = np.load('label_encoder_diabetes_classes.npy', allow_pickle=True)
+label_encoder_diabetes.classes_ = np.load('label_encoder_diabetes_classes.npy')
 
 # Define the home route
 @app.route('/')
@@ -24,7 +25,8 @@ def home():
 def predict():
     # Get the form data
     data = request.form.to_dict()
-    features = np.array([[
+    feature_names = ['Glucose', 'Age', 'waist', 'Cholesterol', 'BMI', 'Systolic BP', 'Diastolic BP']
+    features = pd.DataFrame([[
         float(data['Glucose']),
         int(data['Age']),
         float(data['waist']),
@@ -32,7 +34,7 @@ def predict():
         float(data['BMI']),
         float(data['Systolic_BP']),
         float(data['Diastolic_BP'])
-    ]])
+    ]], columns=feature_names)
 
     print(f"DEBUG inputed features:{features}")
 
